@@ -1,0 +1,313 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+/*Index*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a{
+    text-decoration: none;
+    color: rgb(3, 2, 0);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav .navigation ul li a:hover{
+    color: #1f53c5;
+}
+/*Sobre nosotros*/
+#home {
+    background-image: linear-gradient(rgba(13, 11, 34, 0.3), rgba(5, 4, 46, 0.7)),url(https://arquitecturaviva.com/assets/uploads/obras/46752/av_imagen.jpeg?h=269f8133);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h2{
+    color: #fff;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+#home p{
+    width: 50%;
+    color: #1f53c5;
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+#home .btn{
+    margin-top: 30px;
+}
+#home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #ceb6dd;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+#homa a.blue{
+     color: #ceb6dd;
+     background: rgb(21, 21, 100);
+}
+#homa a.blue:hover{
+  
+    color: rgb(21, 21, 100);
+    background: #ceb6dd;
+}
+
+#home a.yellow{
+    color: #1f53c5;
+    background: #ceb6dd;
+}
+
+#home a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+/*Features*/
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr ));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+#features .fea-box {
+    background: #F9F9FF;
+    text-align: start;
+}
+
+#features .fea-box i {
+    font-size: 2.3rem;
+    color: rgb(44, 44, 80);
+}
+
+#features .fea-box h3{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(46, 44, 59);
+    padding: 13px 0 7px 0;
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(70, 70, 87);
+  
+}
+
+/*Cursos*/
+
+#course {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+
+}
+
+#course course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px,1fr ));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+
+
+#course .courses{
+    text-align: start;
+    background: #F9F9FF;
+    height: 100%;
+
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+#course .courses.details{
+padding: 15px 15px 0 15px;
+}
+
+#course .courses.details i{
+    color: #fdc93b;
+    font-size: .9rem;
+}
+
+#course .courses .courses.details{
+    background-color: rgb(74, 74, 136);
+    color: #fff;
+}
+
+
+
+/*Registrar*/
+
+
+form {
+
+  box-shadow: 0 20px rgba(0, 0, 0, 0.2); 
+  padding: 50px 35px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 380px;
+  
+  
+}
+  
+form h2 {
+
+  font-size: 35px;
+  color: #0d0d0d;
+  margin: 0;
+  
+  }
+  
+  form p {
+  
+  font-size: 16px; color: #5e5e5e; margin-bottom: 35px;
+
+  }
+  
+  
+  
+  
+  
+  
+  
+  /*Footer*/
+  .footer-clean {
+    padding:50px 0;
+    background-color:#fff;
+    color:#4b4c4d;
+  }
+  
+  .footer-clean h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+  
+  .footer-clean ul {
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+  }
+  
+  .footer-clean ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-clean ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-clean .item.social {
+    text-align:right;
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item {
+      text-align:center;
+      padding-bottom:20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-clean .item.social {
+      text-align:center;
+    }
+  }
+  
+  .footer-clean .item.social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin-left:10px;
+    margin-top:22px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-clean .item.social > a:hover {
+    opacity:0.9;
+  }
+  
+  @media (max-width:991px) {
+    .footer-clean .item.social > a {
+      margin-top:40px;
+    }
+  }
+  
+  @media (max-width:767px) {
+    .footer-clean .item.social > a {
+      margin-top:10px;
+    }
+  }
+  
+  .footer-clean .copyright {
+    margin-top:14px;
+    margin-bottom:0;
+    font-size:13px;
+    opacity:0.6;
+  }
+  
+  /* Credit to https://epicbootstrap.com/snippets/footer-with-columns */
